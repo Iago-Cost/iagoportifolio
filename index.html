@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dracula/css/dracula.min.css">
+    <title>Portifolio - Iago Costa</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <xmp></Iago Costa></xmp>
+            </h1>
+            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <ul class="menu">
+                <li><a href="#informacao">Sobre Mim</a></li>
+                <li><a href="#minhas-habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="informacao">
+            <div id="sobre">
+                <h1>Iago Costa</h1>
+                <h2>1°DS M ETEC</h2>
+                <h3>Estudante de Desenvolvimento de Sistemas na Etec Deputado Salim Sedeh</h3>
+            </div>
+            <div id="codigo">
+                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+<span class="hljs-keyword" style="color: rgb(244, 0, 0);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+    let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+    element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    function writeSymbols() {
+        element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+        if (element.count &lt;= element_array.length) {
+            setTimeout(() =&gt; {
+                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        } else if (element.count &gt;= element_array.length) {
+            element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+            writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        }
+    }
+    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+}</pre></span>
+            </div>
+        </section>
+
+        <section id="historia">
+            <img src="./img/Logo.png" alt="Retangulo">
+            <h1>
+                À alguns anos me interessei por programação, fiz uns pequenos cursos de Python, HTML e CSS, porem muito do que eu aprendi foi sozinho, tanto pesquisando como assistindo tutoriais especificos.
+            </h1>
+        </section>
+        <section id="minhas-habilidades">
+            <h1 class="titulo">Minhas Habilidades</h1>
+            <div id="habilidades">
+                <div class="card">
+                    <img src="./img/icon html.png" alt="HTML5" class="normal">
+                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon css.png" alt="CSS3" class="normal">
+                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/PythonPB.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/Python.png" alt="JAVASCRIPT" class="hover">
+                    <h1>Python3</h1>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h1>Meus Projetos</h1>
+            <div id="sites">
+                <div id="shopify" allowfullscreen>
+                    <h1>Em construção...</h1>
+                    <iframe src="https://dinorunner.com/pt/" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div id="msg">
+            <h1><xmp></Iago Costa></xmp></h1>
+            <h2>Se você quer me apoiar em meus projetos <br> e queira me ajuda, estou pronto  <br> para conversar com você.</h2>
+        </div>
+        <div id="contatos">
+            <h1>Contatos</h1>
+            <ul>
+                <li><img src="./img/gmail.png" alt="gmail"> <a href="carloseduardo2006r@gmail.com"
+                        target="_blank">iagovlogs308@gmail.com</a></li>
+                <li><img src="./img/instagram.png" alt="instagram"><a href="https://www.instagram.com/eduardozl.035/"
+                        target="_blank">@euiago.costa</a></li>
+            </ul>
+        </div>
+    </footer>
+<script>
+let menuButton = document.querySelector("#menu");
+let menu = document.querySelector(".menu");
+
+menuButton.addEventListener("click", function () {
+    menu.classList.toggle("open");
+});
+
+const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
+const iframes = document.querySelectorAll('iframe');
+
+botoesTelaCheia.forEach((botao, index) => {
+  botao.addEventListener('click', () => {
+    iframes[index].requestFullscreen();
+  });
+});
+</script>
+</body>
+
+</html>
